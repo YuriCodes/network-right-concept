@@ -285,55 +285,71 @@ footer{
     color: #8a3f72;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 480px) {
     .hero-video{
-        transform: translate(-40%, -95%);
+        transform: translate(-40%, -105%);
     }
     .intro-text{
         font-size: 1em;
         position: absolute;
-        top: 140px;
+        top: 100px;
+   
     }
     .intro-text p{
         font-size: 1em;
+        text-align: center;
     }
     .intro-text a{
         margin: 5px;
+        text-align: center;
     }
     .hero-section{
-        height: 60vh;
+        height: 50vh
     }
     .about-txt{
         flex-direction: column;
         font-size: 0.9em;
-
     }
     .about-section{
         height: 60vh;   
-        margin-top: -180px;
+        margin-top: -120px;
     }
     .first img, .second img, .third img{
         height: 40px;
     }
     .first, .second, .third{
         font-size: 0.8em;
+        margin: 10px;
+        padding: 5px;
+        text-align: center;
     }
     .about-line{
         font-size: 1em;
         margin: 0;
         display: none;
     }
+    .FAQ h2{
+        font-size: 1.2em;
+    }
     .FAQ-section{
         flex-direction: column;
-        font-size: 0.8em;
-        margin-top: -95px;
+        font-size: 0.9em;
+        margin-top: -150px;
+        height: 120vh;
+    }
+    .questions, .answers{
+        font-size: 0.9em;
     }
     .package-section{
-        height: 160vh;
+        height: 200vh;
         display: block;
         font-size: 0.8em;
         margin: 0;
         margin-top: -180px;
+        padding: 0px;
+    }
+    .package-section ul li{
+        text-align: center;
     }
     .testimonials-section{
         display: block;
