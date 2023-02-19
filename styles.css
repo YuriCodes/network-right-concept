@@ -351,6 +351,7 @@ footer{
     }
     .questions, .answers{
         font-size: 0.9em;
+        margin: 0;
     }
     .package-section{
         height: 200vh;
@@ -365,7 +366,7 @@ footer{
     }
     .testimonials-section{
         display: block;
-        height: 85vh;
+        height: 90vh;
         font-size: 0.9em;  
     }
 
