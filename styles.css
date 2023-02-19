@@ -368,7 +368,7 @@ footer{
         display: block;
         height: 95vh;
         font-size: 0.9em;  
-        margin-top: -140px;
+        margin-top: -110px;
     }
 
     .testimonial-img{
@@ -385,4 +385,5 @@ footer{
         font-size: 0.8em;
         height: 20vh;
     }
+
 }
