@@ -366,8 +366,9 @@ footer{
     }
     .testimonials-section{
         display: block;
-        height: 90vh;
+        height: 95vh;
         font-size: 0.9em;  
+        margin-top: -140px;
     }
 
     .testimonial-img{
