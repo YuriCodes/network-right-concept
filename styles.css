@@ -1,0 +1,360 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --glow-color: rgb(220, 74, 196);
+    --section-bg: #8a3f72;
+  }
+body{
+    background-color: black;
+    color: white;
+}
+
+.hero-section{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+.hero-video{
+    position: absolute;
+    z-index: 0;
+    left: 60%;
+    transform: translate(-40%, -13%);
+}
+.intro-text {
+    font-family: manrope;
+    font-size: 1.8em;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    left: 15%;
+}
+.intro-text h1{
+    font-size: 2em;
+    padding: 20px;
+}
+.intro-text a{
+    text-decoration: none;
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+.about-txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: manrope;
+    font-size: 1.2em;
+    height: 50vh;
+    margin: 45px;
+   
+}
+.first, .second, .third{
+    margin: 30px;
+    padding: 20px;
+}
+.about-line{
+    padding: 10px;
+    text-align: center;
+    font-weight: 800;
+    margin: 20px;
+    font-family: manrope;
+    font-size: 2em;
+}
+
+.active {
+    display: block;
+  }
+  
+.FAQ-section{
+    display: flex;
+    font-family: manrope;
+    font-size: 1.2em;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.FAQ{
+    text-align: center;
+    padding: 15px;
+    margin: 20px
+}
+
+.questions, .answers{
+    padding: 15px;
+    margin: 20px;
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    border: 2px solid #8a3f72;
+}
+
+  .active .arrow {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  
+  .arrow {
+    content: url("/img/icon-arrow-down.svg");
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    filter:saturate(4);
+  }
+
+  .answers {
+    display: none;
+  }
+  .pricing-section{
+    text-align: center;
+    font-family: manrope;
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 10px;
+  }
+  .package-section{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    font-family: manrope;
+    font-size: 1.2em;
+  }
+  .free-title, .premium-title, .business-title{
+    padding: 30px;
+    margin: 30px;
+    height: fit-content;
+    width: fit-content;
+    background-color: var(--section-bg);
+    text-align: center;
+    border-radius: 0.45em;
+    perspective: 2em;
+
+  }
+
+  .package-section h3{
+    padding: 10px;
+    font-weight: 500;
+  }
+  .package-section h4{
+    color: rgb(155, 154, 154);
+  }
+  .package-section ul li{
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .premium-title{
+    border: 0.15em solid var(--glow-color);
+    border-radius: 0.45em;
+    perspective: 2em;
+
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+}
+
+.premium-title button, .free-title button, .business-title button{
+  padding: 0.35em 2em;
+  border: 0.15em solid var(--glow-color);
+  border-radius: 0.45em;
+  background: none;
+  perspective: 2em;
+  color: white;
+  font-size: 1em;
+  margin: 10px;
+}
+
+.lil-letters{
+    font-size: 0.8em;
+}
+
+.premium-title button:hover, .free-title button:hover, .business-title button:hover{
+    background-color: var(--glow-color);
+    border: 0.15em solid #0a1c58;
+    cursor: pointer;
+}
+
+.testimonials-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    font-family: manrope;
+    font-size: 1.2em;
+}
+
+.testimonial-img{
+    width: 200px;
+    border-radius: 50%;
+    padding: 5px;
+}
+.first-testimonial, .second-testimonial, .third-testimonial{
+    padding: 5px;
+    text-align: center;
+}
+.first-testimonial p, .second-testimonial p, .third-testimonial p{
+margin: 40px;
+}
+.testimonials-section p{
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+}
+
+.call-to-action{
+    text-align: center;
+    font-family: manrope;
+    font-size: 1.2em;
+    height: 30vh;
+    background-color: var(--section-bg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.call-to-action h3{
+    padding: 15px;
+    margin: 10px;
+}
+.call-to-action button{
+    padding: 0.35em 2em;
+    border-radius: 0.45em;
+    perspective: 2em;
+    color: #8a3f72;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    font-family: manrope;
+    align-items: center;
+    height: 30vh;
+    flex-direction: row;
+    color: #da53af;
+}
+.call-to-action button:hover{
+    background-color: var(--glow-color);
+    color: white;
+    cursor: pointer;
+}
+
+.footer-section{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-family: manrope;
+    font-size: 1.2em;
+    color: #234081;
+}
+.footer-section a{
+    text-decoration: none;
+    color: white;
+}
+.second-column{
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+.second-column h3{
+    padding: 20px;
+    font-family: manrope;
+    color: #8a3f72;
+}
+.second-column ul li{
+    list-style: none;
+    font-family: manrope;
+    font-size: 0.8em;
+    color: #8a3f72;
+}
+.pink-txt{
+    color: #8a3f72;
+}
+
+@media (max-width: 700px) {
+    .hero-video{
+        transform: translate(-40%, -95%);
+    }
+    .intro-text{
+        font-size: 1em;
+        position: absolute;
+        top: 140px;
+   
+    }
+
+    .intro-text p{
+        font-size: 1em;
+    }
+    .intro-text a{
+        margin: 5px;
+    }
+    .hero-section{
+        height: 60vh;
+    }
+    .about-txt{
+        flex-direction: column;
+        font-size: 0.9em;
+
+    }
+    .about-section{
+        height: 60vh;   
+        margin-top: -180px;
+    }
+    .first img, .second img, .third img{
+        height: 40px;
+    }
+    .first, .second, .third{
+        font-size: 0.8em;
+    }
+    .about-line{
+        font-size: 1em;
+        margin: 0;
+        display: none;
+    }
+    .FAQ-section{
+        flex-direction: column;
+        font-size: 0.8em;
+        margin-top: -95px;
+    }
+    .package-section{
+        height: 160vh;
+        display: block;
+        font-size: 0.8em;
+        margin: 0;
+        margin-top: -180px;
+    }
+    .testimonials-section{
+        display: block;
+        height: 85vh;
+        font-size: 0.9em;  
+    }
+
+    .testimonial-img{
+    width: 100px;
+    border-radius: 50%;
+    padding: 5px;
+    }
+    .call-to-action{
+        height: 30vh;
+        font-size: 1em;
+    }
+    footer{
+        text-align: center;
+        font-size: 0.8em;
+        height: 20vh;
+    }
+}
